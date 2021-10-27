@@ -2,6 +2,8 @@ workflows:
   my-workflow:
     max_build_duration: 120
     scripts:
+      - name: download ipsw
+        script: unzip "$(wget http://updates-http.cdn-apple.com/2021WinterFCS/fullrestores/071-22651/BB846A89-C2E2-472E-8E68-CDB63CA05BC8/iPad_Pro_A12X_A12Z_14.4.2_18D70_Restore.ipsw)"
       - name: build
         script: python3 ~/clone/ios_install.py
     artifacts:
