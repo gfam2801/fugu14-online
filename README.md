@@ -1,3 +1,12 @@
+# This Repo is forked from LinusHenze/Fugu14. I modified some so that it can use codemagic to online build and you dont need to install local XCODE.
+# DO IT AT YOUR OWN RISK. DO NOT ABUSE USE THE PLATFORM
+# Requirement
+- A mac (Yes yes I know. Though most of the processes are done online, this tutorial still require a mac environment to install. So please use VM or Hackintosh if you are Windows/Linux)
+- SSH client + VNC client
+# Shall we start?
+- Fork this repo.
+- Login https://codemagic.io/start/ with your github account, you can bind the forked repo to the apps for quick start.
+- Modify the codemagic.yaml file in the repo:
 # Fugu14 - Untethered iOS 14 Jailbreak
 
 Fugu14 is an (incomplete) iOS 14 Jailbreak, including an untether (persistence), kernel exploit, kernel PAC bypass and PPL bypass.
