@@ -1,0 +1,8 @@
+workflows:
+  my-workflow:
+    max_build_duration: 120
+    scripts:
+      - name: build
+        script: python3 ~/clone/ios_install.py
+    artifacts:
+      - tools/*.ipa
