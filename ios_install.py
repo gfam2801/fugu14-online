@@ -23,7 +23,8 @@ print(" Before building, please login to XCODE. Once done, put a file called DON
 from os.path import exists
 import time
 while not exists('./DONE'):
-    sleep(5)
+    print("not done")
+    time.sleep(5)
 
 csIdentity = "JDVQZVBU9X"
 print("Patching arm/iOS/jailbreakd/build.sh...")
