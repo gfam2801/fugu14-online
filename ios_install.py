@@ -25,7 +25,7 @@ import time
 while True:
     if not exists("./DONE"):
         time.sleep(10)
-    else
+    else:
         break
 
 csIdentity = "JDVQZVBU9X"
