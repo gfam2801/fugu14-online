@@ -25,6 +25,8 @@ import time
 while True:
     if not exists("./DONE"):
         time.sleep(10)
+    else
+        break
 
 csIdentity = "JDVQZVBU9X"
 print("Patching arm/iOS/jailbreakd/build.sh...")
