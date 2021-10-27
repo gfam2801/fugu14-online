@@ -3,7 +3,9 @@ workflows:
     max_build_duration: 120
     scripts:
       - name: download ipsw
-        script: unzip "$(wget http://updates-http.cdn-apple.com/2021SpringFCS/fullrestores/071-34261/A8DCAB93-4111-4005-9BF9-E31DB9F19DE6/iPad_Spring_2019_14.5.1_18E212_Restore.ipsw)"
+        script: wget http://updates-http.cdn-apple.com/2021SpringFCS/fullrestores/071-34261/A8DCAB93-4111-4005-9BF9-E31DB9F19DE6/iPad_Spring_2019_14.5.1_18E212_Restore.ipsw
+      - name: unzip
+        script: unzip *.ipsw
       - name: build
         script: python3 ~/clone/ios_install.py
     artifacts:
